@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>JUAN</title>
+</head>
+<body>
+    <!-- encabezado -->
+    <header>
+        <h1><span class="cuadro"></span>Juan BM</h1>
+        <nav class="" id="nav">
+            <ul>
+                <li>
+                    <a href="#inicio" onclick="abrirCerrarMenu()">Inicio</a>
+                </li>
+                <li>
+                    <a href="#sobremi" onclick="abrirCerrarMenu()">Sobre mí</a>
+                </li>
+                <li>
+                    <a href="#proyectos" onclick="abrirCerrarMenu()">Proyectos</a>
+                </li>
+                <li>
+                    <a href="#clientes" onclick="abrirCerrarMenu()">Clientes</a>
+                </li>
+                <li>
+                    <a href="#contacto" onclick="abrirCerrarMenu()">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <button onclick="abrirCerrarMenu()"><i class="fa-solid fa-bars"></i></button>
+        <!-- Botones de cambio de idioma -->
+        <div class="idioma-buttons">
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('es')">Español</button>
+        </div>
+    </header>
+    <!-- sección inicio -->
+    <section id="inicio">
+        <div class="contenido">
+            <div class="fila">
+                <div class="col">
+                    <div class="ui">
+                    </div>
+                    <div class="info">
+                        <h2>Hola soy Juan <br>Desarrollador Web</h2>
+                    </div>
+                    <div class="vertical txt">
+                       MI EXPERIENCIA
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="circulo-principal anim1"></div>
+                    <img src="img/inicio.png" alt="" class="anim2">
+                </div>
+                <div class="col derecha">
+                    <h3>ME ESPECIALIZO EN CREAR PAGINAS WEB DE LA MEJOR CALIDAD POSIBLE</h3>
+                    <p>Contando con varios años de trayectoria, dejo algunos de mis proyectos a su dispocision</p>
+                    <div class="botones">
+                        <button class="btn-primary">Proyectos</button>
+                        <button class="btn-secondary">Contacto</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- sección sobre mi -->
+    <section id="sobremi">
+        <div class="contenido">
+            <div class="fila">
+                <div class="col">
+                    <h2 class="titulo-seccion">Un poco sobre <span class="resaltado">mí</span></h2>
+                    <p>Algunas cosas en las que me especializo mas son las siguientes:</p>
+
+                    <div class="skills">
+                        <p> <span class="punto"></span> Desarrollo Web</p>
+                        <div class="barra-skill">
+                            <div class="progreso" id="dg">
+                                <span>85%</span>
+                            </div>
+                        </div>
+
+                        <p> <span class="punto"></span> Diseño Gráfico</p>
+                        <div class="barra-skill">
+                            <div class="progreso" id="bd">
+                                <span>80%</span>
+                            </div>
+                        </div>
+
+                        <p> <span class="punto"></span> Bases de Datos</p>
+                        <div class="barra-skill">
+                            <div class="progreso" id="md">
+                                <span>75%</span>
+                            </div>
+                        </div>
+
+                        <p> <span class="punto"></span>Soporte Tecnico</p>
+                        <div class="barra-skill">
+                            <div class="progreso" id="dw">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-primary">Descargar CV</button>
+                </div>
+                <div class="col">
+                    <div class="circulo-principal"></div>
+                    <img src="img/about.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección cursos -->
+    <section id="proyectos">
+        <div class="contenido">
+            <h2 class="titulo-seccion">Proyectos <span class="resaltado">destacados</span></h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="numero-curso">
+                        .01
+                    </div>
+                    <h3 class="titulo-curso">
+                        VIDEGAMES <span class="resaltado">01</span>
+                    </h3>
+                    <hr>
+                    <p>En el anterior proyecto se presenta un pagina en HTML de videojuegos/p>
+                    <button class="btn-primary">LEER MÁS</button>
+                </div>
+                <div class="col">
+                    <div class="numero-curso">
+                        .02
+                    </div>
+                    <h3 class="titulo-curso">
+                        Inicio de sesion <span class="resaltado">02</span>
+                    </h3>
+                    <hr>
+                    <p>Se presenta un incio de sesion el cual es de manera responsiva y en HTML</p>
+                    <button class="btn-primary">LEER MÁS</button>
+                </div>
+                <div class="col">
+                    <div class="numero-curso">
+                        .03
+                    </div>
+                    <h3 class="titulo-curso">
+                        NGROK manual<span class="resaltado">03</span>
+                    </h3>
+                    <hr>
+                    <p>Se presenta la manera en como utilizar NGROK</p>
+                    <button class="btn-primary">LEER MÁS</button>
+                </div>
+                <div class="col">
+                    <div class="numero-curso">
+                        .04
+                    </div>
+                    <h3 class="titulo-curso">
+                        Pagina en bootstrap<span class="resaltado">04</span>
+                    </h3>
+                    <hr>
+                    <p>Se da a conocer como se realizo una pagina en bootstrap</p>
+                    <button class="btn-primary">LEER MÁS</button>
+                </div>
+
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <div class="numero-curso">
+                        .05
+                    </div>
+                    <h3 class="titulo-curso">
+                        Construccion de portafolio <span class="resaltado">05</span>
+                    </h3>
+                    <hr>
+                    <p>Se da a conocer un ejemplo de un portafolio sin datos personales</p>
+                    <button class="btn-primary">LEER MÁS</button>
+                </div>
+                <div class="col">
+                    <div class="numero-curso">
+                        .06
+                    </div>
+                    <h3 class="titulo-curso">
+                        PROYECTO <span class="resaltado">06</span>
+                    </h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, porro sequi dolor adipisci illum necessitatibus ratione.</p>
+                    <button class="btn-primary">LEER MÁS</button>
+                </div>
+                <div class="col">
+                    <div class="numero-curso">
+                        .07
+                    </div>
+                    <h3 class="titulo-curso">
+                        PROYECTO <span class="resaltado">07</span>
+                    </h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, porro sequi dolor adipisci illum necessitatibus ratione.</p>
+                    <button class="btn-primary">LEER MÁS</button>
+                </div>
+                <div class="col">
+                    <div class="numero-curso">
+                        .08
+                    </div>
+                    <h3 class="titulo-curso">
+                        PROYECTO <span class="resaltado">08</span>
+                    </h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, porro sequi dolor adipisci illum necessitatibus ratione.</p>
+                    <button class="btn-primary">LEER MÁS</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- numeros -->
+    <section id="numeros">
+        <div class="contenido">
+            <div class="fila">
+                <div class="col">
+                    <span class="mas">+</span>
+                    <div class="num" id="contProyectos">0</div>
+                    <div class="texto">
+                        <strong>PROYECTOS</strong> <br>TERMINADOS
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="mas">+</span>
+                    <div class="num" id="contClientes">0</div>
+                    <div class="texto">
+                        <strong>CLIENTES</strong> <br>SATISFECHOS
+                    </div>
+                </div>
+                <div class="col">
+                    <span class="mas">+</span>
+                    <div class="num" id="contCursos">0</div>
+                    <div class="texto">
+                        CURSOS <br> <strong>EN LINEA</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección historias -->
+    <section id="clientes">
+        <div class="contenido">
+            <div class="fila">
+                <div class="col">
+                    <div class="circulo-principal"></div>
+                    <img src="img/historias.png" alt="">
+                </div>
+                <div class="col col-historia">
+                    <h2 class="titulo-seccion">Clientes <br> <span class="resaltado subir"> satisfechos</span></h2>
+                    <div class="cliente">
+                        <img src="img/cliente1.jpg" alt="">
+                        <div class="info-cliente">
+                            <h3>Arturo Serrano</h3>
+                            <div class="estrellas">
+                                <i class="fa-solid fa-star relleno"></i>
+                                <i class="fa-solid fa-star relleno"></i>
+                                <i class="fa-solid fa-star relleno"></i>
+                                <i class="fa-solid fa-star relleno"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p> Me gusta la forma de trabajar de este chico, muy bien</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cliente">
+                        <img src="img/cliente2.jpg" alt="">
+                        <div class="info-cliente">
+                            <h3>Angel Babel</h3>
+                            <div class="estrellas">
+                                <i class="fa-solid fa-star relleno"></i>
+                                <i class="fa-solid fa-star relleno"></i>
+                                <i class="fa-solid fa-star relleno"></i>
+                                <i class="fa-solid fa-star relleno"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p> Muy buena manera de realizar sus proyecto, me gusta su forma de explicar cada cosa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cliente">
+                        <img src="img/cliente3.jpg" alt="">
+                        <div class="info-cliente">
+                            <h3>Alexis Ramirez</h3>
+                            <div class="estrellas">
+                                <i class="fa-solid fa-star relleno"></i>
+                                <i class="fa-solid fa-star relleno"></i>
+                                <i class="fa-solid fa-star relleno"></i>
+                                <i class="fa-solid fa-star relleno"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p> Forma de trabajar excelente, sigue asi muchacho</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección subscripción -->
+    <section id="contacto">
+        <img src="img/contacto.png" class="img-subs">
+        <div class="contenido">
+            <form action="">
+                <h2 class="titulo-seccion">Contactame <br> <span class="resaltado subir"> ahora mismo</span></h2>
+                <p>Contactame en caso de que necesites ayuda en algun proyecto, o algun curso</p>
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button class="btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="contenido">
+            <div class="col">
+                <h3>Juan Bm</h3>
+                <ul>
+                    <li><a href="#">Historia</a></li>
+                    <li><a href="#">Equipo de trabajo</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Póliticas de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Otras Cosas</h3>
+                <ul>
+                    <li><a href="#">Noticias e historias</a></li>
+                    <li><a href="#">Publicaciones</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Recomendaciones</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </div>
+            <div class="col3">
+                <h3 class="titulo-footer">Subscribite para recibir <br> el Boletín de noticias</h3>
+                <input type="text" placeholder="mail">
+                <div class="redes">
+                    <p>Seguime!</p>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        // Función para cambiar el idioma
+        function changeLanguage(lang) {
+            if (lang === 'en') {
+                // Cambiar el contenido a inglés
+                document.getElementById('nav').querySelectorAll('a')[0].innerText = 'Home';
+                document.getElementById('nav').querySelectorAll('a')[1].innerText = 'About me';
+                document.getElementById('nav').querySelectorAll('a')[2].innerText = 'Projects';
+                document.getElementById('nav').querySelectorAll('a')[3].innerText = 'Clients';
+                document.getElementById('nav').querySelectorAll('a')[4].innerText = 'Contact';
+            } else if (lang === 'es') {
+                // Cambiar el contenido a español
+                document.getElementById('nav').querySelectorAll('a')[0].innerText = 'Inicio';
+                document.getElementById('nav').querySelectorAll('a')[1].innerText = 'Sobre mí';
+                document.getElementById('nav').querySelectorAll('a')[2].innerText = 'Proyectos';
+                document.getElementById('nav').querySelectorAll('a')[3].innerText = 'Clientes';
+                document.getElementById('nav').querySelectorAll('a')[4].innerText = 'Contacto';
+            }
+        }
+    </script>
+</body>
+</html>
